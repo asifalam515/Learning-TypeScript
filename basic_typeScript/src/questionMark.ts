@@ -1,0 +1,2 @@
+//  ? ternamery operator :decision making
+//

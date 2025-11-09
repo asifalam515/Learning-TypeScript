@@ -15,3 +15,8 @@ const poorUser = {
     return (this.balance += value);
   },
 };
+poorUser.addBalance(10000);
+// call back function
+const arr: number[] = [1, 2, 4, 6, 1, 56];
+const squaredArr = arr.map((num: number): number => num * num);
+console.log(arr);

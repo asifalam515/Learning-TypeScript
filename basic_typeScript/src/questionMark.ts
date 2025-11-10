@@ -24,4 +24,3 @@ const user2: {
   address: "kumarkhali",
   town: "bonani",
 };
-const postalCode = user2.address?.postalCode;

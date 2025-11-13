@@ -1,0 +1,1 @@
+// contrain:strict rules deya

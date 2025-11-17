@@ -26,10 +26,18 @@
       console.log(`${this.name}give lecture for ${numOfHours} hours `);
     }
   }
+
+  //   function guard
+  const isStudent = (user: Person) => {
+    return user instanceof Student;
+  };
+  const isTeacher = (user: Person) => {
+    return user instanceof Teacher;
+  };
   const getUserInfo = (user: Person) => {
-    if (user instanceof Student) {
+    if (isStudent(user)) {
       user.doStudy(2);
-    } else if (user instanceof Teacher) {
+    } else if (isTeacher(user)) {
       user.takeClass(6);
     } else {
       user.getSleep(8);

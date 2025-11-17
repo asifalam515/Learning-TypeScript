@@ -32,4 +32,6 @@
     }
   }
   const asifAccount = new BankAccount(123, "asif", 123);
+  asifAccount.AddBalance = 100;
+  console.log(asifAccount);
 }

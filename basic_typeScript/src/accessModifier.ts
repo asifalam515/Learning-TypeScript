@@ -1,7 +1,7 @@
 // access->modify
 class BankAccount {
   readonly userId: number;
-  userName: string;
+  protected userName: string; // we can access on our child/derived class also
   private userBalance: number;
   constructor(userId: number, userName: string, userBalance: number) {
     this.userBalance = userBalance;
@@ -17,6 +17,10 @@ class BankAccount {
     );
   }
 }
+
+// another bank
+class StudentBankAccount extends BankAccount {}
 const asifAccount = new BankAccount(1231, "asif", 100);
 asifAccount.addbalance(100);
+asifAccount.addbalance(19);
 asifAccount.checkBalance();

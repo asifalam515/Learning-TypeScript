@@ -19,3 +19,4 @@ const product: ProductWithColor = {
 };
 type OptionalProduct = Partial<Product>;
 type ProductReadOnly = Readonly<Product>;
+const emptyObject: Record<string, unknown> = {};
